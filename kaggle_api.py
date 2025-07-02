@@ -6,7 +6,7 @@ import os
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 
-def download_kaggle_dataset(dataset_name: str, download_path: str = 'data'):
+def download_kaggle_dataset(dataset_name: str, download_path: str):
     if not os.path.exists(download_path):
         os.makedirs(download_path)
 
